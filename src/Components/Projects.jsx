@@ -16,8 +16,8 @@ function Projects() {
                 <div className={styles.projectDets}>
                     <img src={contact} />
                     <div className={styles.overlay}>
-                        <a href="" target='_blank'><img src={github} alt="" className={styles.githubIcon}/></a>
-                        <a href="" target='_blank'><img src={globe} alt="" className={styles.githubIcon}/></a>
+                        <a href="https://github.com/Effy1996/contact-form-main" target='_blank'><img src={github} alt="" className={styles.githubIcon}/></a>
+                        <a href="https://contactform-xi-nine.vercel.app/" target='_blank'><img src={globe} alt="" className={styles.githubIcon}/></a>
                     </div>
                     <h6>Contact Form</h6>
                 </div>
@@ -25,7 +25,8 @@ function Projects() {
                 <div className={styles.projectDets}>
                     <img src={product} />
                     <div className={styles.overlay}>
-                        <a href="#" target='_blank'><i className="bi bi-github"></i></a>
+                        <a href="https://github.com/Effy1996/ecommerce-product-page-main" target='_blank'><img src={github} alt="" className={styles.githubIcon}/></a>
+                        <a href="https://ecommerce-product-page-main-kohl.vercel.app/" target='_blank'><img src={globe} alt="" className={styles.githubIcon}/></a>
                     </div>
                     <h6>E-Commerce Product Page</h6>
                 </div>
@@ -33,7 +34,8 @@ function Projects() {
                 <div className={styles.projectDets}>
                     <img src={url} />
                     <div className={styles.overlay}>
-                        <a href="#" target='_blank'><i className="bi bi-github"></i></a>
+                        <a href="https://github.com/Effy1996/url-shortening-api-master" target='_blank'><img src={github} alt="" className={styles.githubIcon}/></a>
+                        <a href="https://url-shortening-api-master-sandy.vercel.app/" target='_blank'><img src={globe} alt="" className={styles.githubIcon}/></a>
                     </div>
                     <h6>Url Shortening Landing Page</h6>
                 </div>

@@ -38,7 +38,7 @@ function Contact() {
     return (
         <section id="contact" className={styles.contact}>
         <h2><span>Contact</span> Me</h2>
-        <div className={styles.contactInfo}>
+        {/*<div className={styles.contactInfo}>*/}
             <div className={styles.contactDets}>
                 <div className={styles.info}> <span><i className="bi bi-telephone-fill"></i>   Calls/Text</span><br />
                 +254 706666305
@@ -50,7 +50,7 @@ function Contact() {
                 effyakinyi07@gmail.com
                 </div>
             </div>
-            <form action="" onSubmit={handleSubmit(onSubmit)}>
+            {/*<form action="" onSubmit={handleSubmit(onSubmit)}>
             <h3>Write to me...</h3>
             
                 <div className={styles.first}>
@@ -140,15 +140,16 @@ function Contact() {
 
                 <div className={styles.message}>
                     <Controller name="message" control={control} rules={{required: "Please write your message!"}} render={({field}) => <Textarea {...field} placeholder='Write your message here...' 
-                        size='lg' 
+                        size='lg'
                         data-skip-inverted-colors="true" 
                         sx={{ border: '2px solid rgb(107, 107, 106)',
                             width: '100%',
                             height: "250px",
+                            resize: "none",
                             color: 'rgb(107, 107, 106)',
-                            outline: 'none',
+                            outline: 'none !important',
                             "--Textarea-focusedHighlight": "transparent",
-                            "--Textarea-focusedThickness": "3px",
+                            "--Textarea-focusedThickness": "0",
                             "--Textarea-focused": 0,
                             "&.Mui-focused": {
                                 borderColor: "rgb(255, 99, 71)",
@@ -181,10 +182,10 @@ function Contact() {
             <div className={styles.message}>
                 <textarea name="message" id="message" {...register("message", {required: "This is required!"})} aria-invalid={errors.message ? "true" : "false"} tabIndex={0}></textarea>
                     {errors.message && <p role='alert' className={styles.error}>{errors.message.message}</p>}
-            */}
+            
             <button type='submit' className={styles.contactBtn}>Send Message</button>
         </form>
-        </div>
+        </div>*/}
         </section>
     )
 }

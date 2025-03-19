@@ -13,9 +13,9 @@ function Intro() {
         <p className={styles.introInfo}>I am the world's best at seamlessly blending social media expertise with cutting-edge web app development,</p>
         {/*<button type='' className={styles.download}>Download CV</button>*/}
         <div className={styles.socials}>
-        <i className="bi bi-linkedin"><a href='#' target='_blank'></a></i>
-        <i className="bi bi-github"><a href='#' target='_blank'></a></i>
-        <i className="bi bi-youtube"><a href='#' target='_blank'></a></i>
+        <i className="bi bi-linkedin"><a href='www.linkedin.com/in/effy-akinyi-odhiambo-18569031b' target='_blank'></a></i>
+        <i className="bi bi-github"><a href='https://github.com/Effy1996' target='_blank'></a></i>
+        <i className="bi bi-youtube"><a href='https://www.youtube.com/@TechGirl_Ke-o4y' target='_blank'></a></i>
         </div>
       </div>
       <div className={styles.imageDiv}>
