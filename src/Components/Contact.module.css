@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-red: rgb(255, 99, 71);
+    --primary-offwhite: rgb(243, 240, 236);
+    --primary-grey: rgb(107, 107, 106);
+    --secondary-beige: rgb(248, 222, 193);
+    --secondary-red: rgba(255, 99, 71, 0.5);
+    --light-red: rgba(248, 152, 135, 0.3);
+}
+
+.contact {
+    height: 100vh;
+    margin: 80px 0 250px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contactInfo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactDets {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+form {
+    width: 600px;
+    margin: 20px;
+}
+
+form h3 {
+    color: var(--primary-red);
+}
+
+.first, .last, .number, .email {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+textarea {
+    font-size: 16px;
+    border: 2px solid var(--primary-grey);
+    padding: 20px;
+    border-radius: 10px;
+    height: 250px;
+    width: 100%;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+textarea:focus {
+    background: var(--light-red);
+    border: 2px solid var(--light-red);
+}
+
+.names, .extraDets {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    
+}
+
+.contactBtn {
+    position: relative;
+    left: 35%;
+    border: 2px solid var(--primary-red);
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    width: 30%;
+    background: var(--primary-red);
+    color: var(--primary-grey);
+    font-weight: 600;
+    box-shadow: 5px 5px 10px hsla(0, 0%, 0%, 0.1);
+}
+
+.contactBtn:hover {
+    background:var(--light-red);
+    color: var(--primary-grey);
+    border: 2px solid var(--light-red);
+}
+
+.error {
+    display: block;
+    color: var(--primary-red);
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.inputError {
+    border: 2px solid var(--primary-red);
+}
+
+
+
+  

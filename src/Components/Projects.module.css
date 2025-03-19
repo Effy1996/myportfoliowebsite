@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: Monnain;
+    src: url('../assets/monainn-font/MonainnRegular-RpWKo.otf');
+    font-weight: 500 700 800;
+    font-style: normal;
+}
+
+
+:root {
+    --primary-red: rgb(255, 99, 71);
+    --primary-offwhite: rgb(243, 240, 236);
+    --primary-grey: rgb(107, 107, 106);
+    --secondary-beige: rgb(248, 222, 193);
+    --secondary-red: rgba(255, 99, 71, 0.5);
+    --light-red: rgba(248, 152, 135, 0.3);
+}
+
+.projects {
+    background: var(--light-red);
+    border-bottom-right-radius: 20%;
+    border-top-left-radius: 20%;
+    padding: 100px 0;
+    margin-top: 50px;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+h6 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.projectInfo {
+    font-weight: 600;
+    font-size: 18px;
+    margin:10px 10px 30px;
+    text-align: center;
+}
+
+.projectDets {
+    border: 2px solid var(--secondary-red);
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.projectDets:hover {
+    border: none;
+    height: 350px;
+    transition: height .3s ease;
+}
+
+.projectDets img {
+    width: 250px;
+}
+
+.projectDets .overlay a {
+    width: 30px;  
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.projectDets:hover .overlay a {
+    opacity: 1;
+}
+
+.projectDets:hover .overlay {
+    background-color: var(--primary-red);
+    opacity: 1;
+}
+
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: absolute;  /* Overlay over the image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;  /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.githubIcon {
+    width: 30px;
+    height: 30px;
+}

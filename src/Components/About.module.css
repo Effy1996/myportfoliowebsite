@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: Monnain;
+    src: url('../assets/monainn-font/MonainnRegular-RpWKo.otf');
+    font-weight: 500 700 800;
+    font-style: normal;
+}
+
+:root {
+    --primary-red: rgb(255, 99, 71);
+    --primary-offwhite: rgb(243, 240, 236);
+    --primary-grey: rgb(107, 107, 106);
+    --secondary-brown: rgb(228, 123, 74);
+    --secondary-beige: rgb(248, 222, 193);
+    --secondary-red: rgba(255, 99, 71, 0.5);
+    --light-red: rgba(248, 152, 135, 0.2);
+}
+
+@keyframes circleSpin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.about {
+    background: var(--light-red);
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    margin: 0;
+    height: 80vh;
+    font-family: "Roboto", sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+span {
+    color: var(--primary-red);
+}
+
+.aboutImg {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.profpic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-red);
+}
+
+.spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    border-radius: 50% !important;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid var(--primary-red);
+    border-right: 2px solid var(--primary-red);
+    animation:circleSpin 5s linear infinite;
+}

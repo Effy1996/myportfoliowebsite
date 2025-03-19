@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-red: rgb(255, 99, 71);
+    --primary-offwhite: rgb(247, 244, 240);
+    --primary-grey: rgb(107, 107, 106);
+    --secondary-beige: rgb(248, 222, 193);
+    --secondary-red: rgba(255, 99, 71, 0.5);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--primary-grey);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px;
+    margin-bottom: 20px;
+    height: 50px;
+    z-index: 10000;
+    font-family: "Roboto", sans-serif;
+}
+
+.logo {
+    width: 70px;
+}
+
+.menuIcon {
+    display: none;
+}
+
+ul {
+    display: flex;
+    margin-right: 50px;
+    gap: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-grey);
+    font-weight: 600;
+}
+
+a:is(:hover, :active, :focus) {
+    color: var(--primary-red);
+    text-decoration: underline;
+    text-decoration-color: var(--primary-red);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 20px;
+}
+
+@media(max-width:540px) {
+    ul {
+        gap: 20px;
+    }
+}
+
+@media(max-width:476px) {
+    .fullNav {
+        display: none;
+    }
+
+    .respNav {
+        position: fixed;
+        width: 65%;
+        min-height: 100vh !important;
+        top: 0;
+        right: 0;
+        background: var(--primary-offwhite);
+        margin-left: -150px;
+        padding: 30px;
+        transition: .3s ease;
+        z-index: 20000;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    a {
+        color: var(--primary-red);
+    }
+
+    a:is(:hover, :active, :focus) {
+        background-color: var(--secondary-light-grey);
+        padding: 5px 10px 10px;
+        border-radius: 10px;
+    }
+
+    .menuIcon {
+        margin-right: 30px;
+        width: 22px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .menuEXit {
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+
+}

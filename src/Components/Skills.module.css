@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-red: rgb(255, 99, 71);
+    --primary-offwhite: rgb(243, 240, 236);
+    --primary-grey: rgb(107, 107, 106);
+    --secondary-beige: rgb(248, 222, 193);
+    --secondary-red: rgba(255, 99, 71, 0.5);
+    --light-red: rgba(248, 152, 135, 0.3);
+}
+
+.skills {
+    margin: 20px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+
+h2 {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slideContainer {
+    width: 80%;
+    height: 300px;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;
+    gap: 150px;
+    overflow-x: auto;
+    padding: 10px 50px;
+    scrollbar-width: none;
+}
+
+.percentage {
+    text-align: center;
+    position: relative;
+    width: 80px;
+    margin: 10px 0;
+    padding: 30px 0;
+    background-color: rgb(255, 255, 255) !important;
+    border-radius: 50%;
+}
+
+.percentage::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(50deg, var(--primary-red), var(--light-red));
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 13px;
+    border-radius: 50%;
+}
+
+.caption {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.caption img {
+    width: 20px;
+}
