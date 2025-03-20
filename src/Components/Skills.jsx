@@ -84,7 +84,7 @@ function Skills() {
     
     return (
         <section id='skills' className={styles.skills}>
-            <h2><span>My</span> Skills</h2>
+            <h2>My<span> Skills</span></h2>
             
            {/* <Carousel responsive={responsive} infinite={true} swipeable={true} draggable={false} containerClass={styles.slideContainer}>
                 <div className={styles.slide}>

@@ -37,7 +37,7 @@ function Contact() {
 
     return (
         <section id="contact" className={styles.contact}>
-        <h2><span>Contact</span> Me</h2>
+        <h2>Contact<span> Me</span></h2>
         {/*<div className={styles.contactInfo}>*/}
             <div className={styles.contactDets}>
                 <div className={styles.info}> <span><i className="bi bi-telephone-fill"></i>   Calls/Text</span><br />

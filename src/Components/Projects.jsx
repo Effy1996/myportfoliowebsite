@@ -9,7 +9,7 @@ import globe from '../assets/globe-solid.svg';
 function Projects() {
     return (
         <section id="projects" className={styles.projects}>
-        <h2>Top <span>Projects</span></h2>
+        <h2> <span>Top </span>Projects</h2>
         <div className={styles.container}>
             <p className={styles.projectInfo}>Explore these sample projects to see firsthand how I can bring your website vision to life with creativity and precision!</p>
             <div className={styles.projectContainer}>
