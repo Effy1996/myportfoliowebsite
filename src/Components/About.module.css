@@ -81,3 +81,9 @@ span {
     border-right: 2px solid var(--primary-red);
     animation:circleSpin 5s linear infinite;
 }
+
+@media(max-width:316px) {
+    .about {
+        height: 100vh;
+    }
+}
