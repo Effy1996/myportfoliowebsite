@@ -36,7 +36,7 @@
     justify-content: center;
     padding: 100px;
     margin: 0;
-    height: 80vh;
+    height: 100vh;
     font-family: "Roboto", sans-serif;
 }
 
@@ -82,7 +82,7 @@ span {
     animation:circleSpin 5s linear infinite;
 }
 
-@media(max-width:316px) {
+@media(max-width:320px) {
     .about {
         height: 100vh;
     }
