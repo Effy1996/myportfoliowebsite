@@ -18,6 +18,7 @@ function NavBar() {
                 <ul>
                     <li><a href='#intro' tabIndex={0} onClick={() => setOpenNavbar(false)}>Home</a></li>
                     <li><a href='#about' tabIndex={0} onClick={() => setOpenNavbar(false)}>About</a></li>
+                    <li><a href='#services' tabIndex={0} onClick={() => setOpenNavbar(false)}>Services</a></li>
                     <li><a href='#skills' tabIndex={0} onClick={() => setOpenNavbar(false)}>Skills</a></li>
                     <li><a href='#projects' tabIndex={0} onClick={() => setOpenNavbar(false)}>Projects</a></li>
                     <li><a href='#contact' tabIndex={0} onClick={() => setOpenNavbar(false)}>Contact</a></li>
@@ -27,6 +28,7 @@ function NavBar() {
                 <ul>
                     <li><a href='#intro' tabIndex={0}>Home</a></li>
                     <li><a href='#about' tabIndex={0}>About</a></li>
+                    <li><a href='#services' tabIndex={0}>Services</a></li>
                     <li><a href='#skills' tabIndex={0}>Skills</a></li>
                     <li><a href='#projects' tabIndex={0}>Projects</a></li>
                     <li><a href='#contact' tabIndex={0}>Contact</a></li>
