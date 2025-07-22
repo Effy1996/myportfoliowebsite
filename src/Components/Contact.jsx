@@ -38,7 +38,7 @@ function Contact() {
     return (
         <section id="contact" className={styles.contact}>
         <h2>Contact<span> Me</span></h2>
-        {/*<div className={styles.contactInfo}>*/}
+        <div className={styles.contactInfo}>
             <div className={styles.contactDets}>
                 <div className={styles.info}> <span><i className="bi bi-telephone-fill"></i>   Calls/Text</span><br />
                 +254 706666305
@@ -50,7 +50,7 @@ function Contact() {
                 effyakinyi07@gmail.com
                 </div>
             </div>
-            {/*<form action="" onSubmit={handleSubmit(onSubmit)}>
+            <form action="" onSubmit={handleSubmit(onSubmit)}>
             <h3>Write to me...</h3>
             
                 <div className={styles.first}>
@@ -160,7 +160,7 @@ function Contact() {
                     },}}/>}/>
                     {errors.message && <p role='alert' className={styles.error}>{errors.message.message}</p>}
                 </div>
-                {/*<div className={styles.first}>
+                <div className={styles.first}>
                 <input type="text" className={errors.fname ? "inputError" : ""} placeholder='First Name' {...register("fname", {required: "This is required!"})} aria-invalid={errors.fname ? "true" : "false"} tabIndex={0}/>
                     {errors.fname && <p role='alert' className={styles.error}>{errors.fname.message}</p>}
                 </div>
@@ -185,7 +185,7 @@ function Contact() {
             
             <button type='submit' className={styles.contactBtn}>Send Message</button>
         </form>
-        </div>*/}
+        </div>
         </section>
     )
 }
