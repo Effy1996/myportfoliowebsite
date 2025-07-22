@@ -28,7 +28,8 @@
 }
 
 .contactDets {
-    width: 300px;
+    flex: 1 1 300px; /* Responsive base width */
+    min-width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,7 +44,8 @@
 }
 
 form {
-    max-width: 600px;
+    flex: 1 1 600px;
+    min-width: 300px;
     margin: 20px;
 }
 
