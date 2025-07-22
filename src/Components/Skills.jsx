@@ -17,7 +17,7 @@ const slides = [
         caption: "React",
     },
     {
-        percentage: 85,
+        percentage: 65,
         img: django,
         caption: "Django",  
     },
@@ -37,7 +37,7 @@ const slides = [
         caption: "JavaScript",
     },
     {
-        percentage: 75,
+        percentage: 55,
         img: python,
         caption: "Python",
     },
