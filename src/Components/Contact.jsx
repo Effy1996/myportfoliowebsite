@@ -183,9 +183,9 @@ function Contact() {
                 <textarea name="message" id="message" {...register("message", {required: "This is required!"})} aria-invalid={errors.message ? "true" : "false"} tabIndex={0}></textarea>
                     {errors.message && <p role='alert' className={styles.error}>{errors.message.message}</p>}
             
-            <button type='submit' className={styles.contactBtn}>Send Message</button>
+            <button type='submit' className={styles.contactBtn}>Send Message</button>*/}
         </form>
-        </div>*/}
+        </div>
         </section>
     )
 }
