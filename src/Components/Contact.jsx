@@ -160,7 +160,7 @@ function Contact() {
                     },}}/>}/>
                     {errors.message && <p role='alert' className={styles.error}>{errors.message.message}</p>}
                 </div>
-                <div className={styles.first}>
+                {/* <div className={styles.first}>
                 <input type="text" className={errors.fname ? "inputError" : ""} placeholder='First Name' {...register("fname", {required: "This is required!"})} aria-invalid={errors.fname ? "true" : "false"} tabIndex={0}/>
                     {errors.fname && <p role='alert' className={styles.error}>{errors.fname.message}</p>}
                 </div>
@@ -185,7 +185,7 @@ function Contact() {
             
             <button type='submit' className={styles.contactBtn}>Send Message</button>
         </form>
-        </div>
+        </div>*/}
         </section>
     )
 }
