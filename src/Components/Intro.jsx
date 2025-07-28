@@ -10,7 +10,7 @@ function Intro() {
       <div className={styles.mainInfo}>
         <h1>Hey, I'm <span>Effy</span></h1>
         <h4>Web Developer</h4>
-        <p className={styles.introInfo}>I am the world's best at seamlessly blending social media expertise with cutting-edge web app development,</p>
+        <p className={styles.introInfo}> I specialize in blending social media expertise with modern web app development to create impactful digital experiences.</p>
         {/*<button type='' className={styles.download}>Download CV</button>*/}
         <div className={styles.socials}>
         <a href="https://linkedin.com/in/effy-akinyi-odhiambo-18569031b" target='_blank'><i className="bi bi-linkedin"></i></a>
